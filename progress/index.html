@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"><meta http-equiv="refresh" content="4">
+<title>devin_threejs_animegirl — progress</title>
+<style>
+body{font:14px/1.45 system-ui;margin:0;background:#0d1117;color:#e6edf3;padding:18px}
+h1{font-size:18px;color:#8fb4ff}
+h2{font-size:15px;margin:22px 0 8px;color:#ffd0e6}
+.grid{display:flex;flex-wrap:wrap;gap:10px}
+figure{margin:0;background:#161b22;border:1px solid #30363d;border-radius:8px;padding:8px}
+img{display:block;max-width:340px;border-radius:4px;background:#b9dcff}
+figcaption{font-size:11px;color:#8b949e;margin-top:6px;word-break:break-all;max-width:340px}
+</style></head><body>
+<h1>devin_threejs_animegirl — iteration renders (auto-refresh 4s)</h1>
+<div id="root"></div>
+<script>
+fetch('../output/iterations/manifest.json?'+Date.now()).then(r=>r.json()).then(m=>{
+  m.sort((a,b)=>b.iter.localeCompare(a.iter));
+  const root=document.getElementById('root');
+  for(const it of m){
+    const h=document.createElement('h2');h.textContent=it.iter+' — '+it.time;root.appendChild(h);
+    const g=document.createElement('div');g.className='grid';
+    for(const f of it.files){
+      const fg=document.createElement('figure');
+      const im=document.createElement('img');im.src='../'+f+'?'+Date.now();fg.appendChild(im);
+      const cap=document.createElement('figcaption');cap.textContent=f;fg.appendChild(cap);
+      g.appendChild(fg);
+    }
+    root.appendChild(g);
+  }
+}).catch(e=>{document.getElementById('root').textContent='no manifest yet: '+e});
+</script>
+</body></html>

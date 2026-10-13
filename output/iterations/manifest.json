@@ -1,0 +1,198 @@
+[
+  {
+    "iter": "iter01",
+    "time": "2026-10-13T08:48:03.622Z",
+    "files": [
+      "output/iterations/iter01-front.png",
+      "output/iterations/iter01-threequarter.png",
+      "output/iterations/iter01-side.png",
+      "output/iterations/iter01-back.png",
+      "output/iterations/iter01-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter02",
+    "time": "2026-10-13T08:48:51.353Z",
+    "files": [
+      "output/iterations/iter02-front.png",
+      "output/iterations/iter02-threequarter.png",
+      "output/iterations/iter02-side.png",
+      "output/iterations/iter02-back.png",
+      "output/iterations/iter02-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter03",
+    "time": "2026-10-13T08:49:25.463Z",
+    "files": [
+      "output/iterations/iter03-front.png",
+      "output/iterations/iter03-threequarter.png",
+      "output/iterations/iter03-side.png",
+      "output/iterations/iter03-back.png",
+      "output/iterations/iter03-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter04",
+    "time": "2026-10-13T08:49:56.500Z",
+    "files": [
+      "output/iterations/iter04-front.png",
+      "output/iterations/iter04-closeup.png",
+      "output/iterations/iter04-threequarter.png"
+    ]
+  },
+  {
+    "iter": "iter05",
+    "time": "2026-10-13T08:50:30.582Z",
+    "files": [
+      "output/iterations/iter05-front.png",
+      "output/iterations/iter05-threequarter.png",
+      "output/iterations/iter05-side.png",
+      "output/iterations/iter05-back.png",
+      "output/iterations/iter05-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter06",
+    "time": "2026-10-13T08:51:02.515Z",
+    "files": [
+      "output/iterations/iter06-front.png",
+      "output/iterations/iter06-threequarter.png",
+      "output/iterations/iter06-side.png",
+      "output/iterations/iter06-back.png",
+      "output/iterations/iter06-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter07",
+    "time": "2026-10-13T08:51:49.332Z",
+    "files": [
+      "output/iterations/iter07-front.png",
+      "output/iterations/iter07-threequarter.png",
+      "output/iterations/iter07-side.png",
+      "output/iterations/iter07-back.png",
+      "output/iterations/iter07-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter08",
+    "time": "2026-10-13T08:52:20.857Z",
+    "files": [
+      "output/iterations/iter08-front.png",
+      "output/iterations/iter08-threequarter.png",
+      "output/iterations/iter08-side.png",
+      "output/iterations/iter08-back.png",
+      "output/iterations/iter08-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter09",
+    "time": "2026-10-13T08:52:44.785Z",
+    "files": [
+      "output/iterations/iter09-front.png",
+      "output/iterations/iter09-threequarter.png",
+      "output/iterations/iter09-side.png",
+      "output/iterations/iter09-back.png",
+      "output/iterations/iter09-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter10",
+    "time": "2026-10-13T08:53:16.053Z",
+    "files": [
+      "output/iterations/iter10-front.png",
+      "output/iterations/iter10-threequarter.png",
+      "output/iterations/iter10-side.png",
+      "output/iterations/iter10-back.png",
+      "output/iterations/iter10-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter11",
+    "time": "2026-10-13T08:53:34.101Z",
+    "files": [
+      "output/iterations/iter11-front.png",
+      "output/iterations/iter11-threequarter.png",
+      "output/iterations/iter11-side.png",
+      "output/iterations/iter11-back.png",
+      "output/iterations/iter11-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter12",
+    "time": "2026-10-13T08:54:06.513Z",
+    "files": [
+      "output/iterations/iter12-front.png",
+      "output/iterations/iter12-threequarter.png",
+      "output/iterations/iter12-side.png",
+      "output/iterations/iter12-back.png",
+      "output/iterations/iter12-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter13",
+    "time": "2026-10-13T08:54:29.005Z",
+    "files": [
+      "output/iterations/iter13-front.png",
+      "output/iterations/iter13-threequarter.png",
+      "output/iterations/iter13-side.png",
+      "output/iterations/iter13-back.png",
+      "output/iterations/iter13-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter14",
+    "time": "2026-10-13T08:54:53.934Z",
+    "files": [
+      "output/iterations/iter14-front.png",
+      "output/iterations/iter14-threequarter.png",
+      "output/iterations/iter14-side.png",
+      "output/iterations/iter14-back.png",
+      "output/iterations/iter14-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter15",
+    "time": "2026-10-13T08:55:14.839Z",
+    "files": [
+      "output/iterations/iter15-front.png",
+      "output/iterations/iter15-threequarter.png",
+      "output/iterations/iter15-side.png",
+      "output/iterations/iter15-back.png",
+      "output/iterations/iter15-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter16",
+    "time": "2026-10-13T08:55:40.245Z",
+    "files": [
+      "output/iterations/iter16-front.png",
+      "output/iterations/iter16-threequarter.png",
+      "output/iterations/iter16-side.png",
+      "output/iterations/iter16-back.png",
+      "output/iterations/iter16-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter17",
+    "time": "2026-10-13T08:56:03.461Z",
+    "files": [
+      "output/iterations/iter17-front.png",
+      "output/iterations/iter17-threequarter.png",
+      "output/iterations/iter17-side.png",
+      "output/iterations/iter17-back.png",
+      "output/iterations/iter17-closeup.png"
+    ]
+  },
+  {
+    "iter": "iter18",
+    "time": "2026-10-13T08:56:22.765Z",
+    "files": [
+      "output/iterations/iter18-front.png",
+      "output/iterations/iter18-threequarter.png",
+      "output/iterations/iter18-side.png",
+      "output/iterations/iter18-back.png",
+      "output/iterations/iter18-closeup.png"
+    ]
+  }
+]
