@@ -20,7 +20,10 @@ Self-scored **~92/100** after 18 render iterations against a 95/100 goal.
   never base64 to stdout).
 - `scripts/turntable.mjs` — 240 deterministic `renderSpin` frames → ffmpeg mp4.
 - `scripts/showcase.mjs` — all views with credit bar → `output/showcase/`.
-- `viewer/index.html` — mobile+desktop GLB viewer (OrbitControls, spin toggle, credit bar).
+- `viewer/index.html` — public viewer: loads the live studio scene (`../studio/main.js`
+  + OrbitControls + auto credit bar). The exported GLB loses toon/outline materials
+  (GLTFExporter converts to standard mats and BackSide hulls render black) — so the
+  showcase renders from the scene, not the GLB. GLB stays a download artifact only.
 - `progress/index.html` — auto-refreshing iteration gallery.
 - `output/` — renders, GLB, mp4. `node_modules/` — local playwright/three (not vendored src).
 
@@ -41,7 +44,8 @@ importmaps don't work on file://.
 - Done: chibi kawaii character (pastel-pink hair, devin-blue eyes, sailor outfit,
   sparkles+hearts, twin-tails, ahoge, crown shine arc, tip-shaded strands), all 4 side
   views verified natural, GLB 2.5MB, turntable mp4, showcase stills w/ credit bar,
-  live viewer page, GitHub Pages deploy.
+  live viewer page, deployed: https://ecooxai.github.io/devin_threejs_animegirl/
+  repo: https://github.com/ecooxai/devin_threejs_animegirl branch `devin/threejs-animegirl`
 - Score ~92/100. Remaining polish ideas if pushed further: side-view forelock sheets
   could overlap ear more; skirt inner-face flash at hem gaps; hands are mitten-simple;
   no rig/animation (static pose + code-driven sway only); GLB loses toon-outline
