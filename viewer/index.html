@@ -8,83 +8,16 @@
   html, body {margin:0; height:100%; background:#b9dcff; overflow:hidden;
     font-family: system-ui, -apple-system, sans-serif; touch-action:none}
   #app {position:fixed; inset:0}
-  #credit {position:fixed; left:0; right:0; bottom:0; background:#000; color:#fff;
-    font-size:22px; font-weight:700; text-align:center; padding:14px 8px;
-    letter-spacing:.5px; z-index:5}
-  #spinBtn {position:fixed; top:14px; right:14px; z-index:6; border:0; border-radius:999px;
-    background:rgba(255,255,255,.75); padding:10px 16px; font-size:15px; font-weight:600;
-    color:#356; cursor:pointer; backdrop-filter:blur(6px)}
-  #spinBtn:active {transform:scale(.95)}
+  .loading {position:fixed; inset:0; display:grid; place-items:center;
+    color:#356; font-size:18px; z-index:4}
 </style>
 <script type="importmap">
 {"imports":{"three":"../vendor/three.module.js","three/addons/":"../vendor/addons/"}}
 </script>
 </head>
 <body>
+<div class="loading">loading…</div>
 <div id="app"></div>
-<button id="spinBtn">⟳ spin</button>
-<div id="credit">devin · threejs · animegirl</div>
-<script type="module">
-import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-
-const app = document.getElementById('app');
-const renderer = new THREE.WebGLRenderer({antialias: true});
-renderer.setSize(innerWidth, innerHeight);
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-renderer.outputColorSpace = THREE.SRGBColorSpace;
-app.appendChild(renderer.domElement);
-
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xb9dcff);
-const camera = new THREE.PerspectiveCamera(38, innerWidth / innerHeight, 0.1, 2000);
-camera.position.set(64, 66, 214);
-
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.target.set(0, 57, 0);
-controls.enableDamping = true;
-controls.minDistance = 60;
-controls.maxDistance = 600;
-
-scene.add(new THREE.HemisphereLight(0xeaf4ff, 0xffd9e8, 0.9));
-const key = new THREE.DirectionalLight(0xffffff, 1.35);
-key.position.set(55, 130, 90);
-scene.add(key);
-const rim = new THREE.DirectionalLight(0xbcd9ff, 0.85);
-rim.position.set(-70, 90, -90);
-scene.add(rim);
-const fill = new THREE.DirectionalLight(0xffe6f0, 0.4);
-fill.position.set(-60, 40, 80);
-scene.add(fill);
-
-let model = null;
-new GLTFLoader().load('../output/devin_threejs_animegirl.glb', (g) => {
-  model = g.scene;
-  scene.add(model);
-  document.querySelector('.loading')?.remove();
-});
-
-let spinning = false;
-document.getElementById('spinBtn').onclick = () => { spinning = !spinning; };
-
-const clock = new THREE.Clock();
-(function animate() {
-  requestAnimationFrame(animate);
-  const t = clock.getElapsedTime();
-  if (model) {
-    if (spinning) model.rotation.y = t * 0.6;
-    model.position.y = Math.sin(t * 1.6) * 0.35;
-  }
-  controls.update();
-  renderer.render(scene, camera);
-})();
-
-addEventListener('resize', () => {
-  camera.aspect = innerWidth / innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(innerWidth, innerHeight);
-});
-</script>
+<script type="module" src="../studio/main.js"></script>
 </body>
 </html>

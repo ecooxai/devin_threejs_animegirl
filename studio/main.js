@@ -654,8 +654,8 @@ const fill = new THREE.DirectionalLight(0xffe6f0, 0.4);
 fill.position.set(-60, 40, 80);
 scene.add(fill);
 
-// name credit overlay for showcase shots
-if (params.has('credit')) {
+// name credit overlay — on for showcase shots, and always in the shared viewer
+if (params.has('credit') || location.pathname.endsWith('/viewer/')) {
   const c = document.createElement('canvas');
   c.width = W; c.height = 110;
   const x = c.getContext('2d');
